@@ -1,7 +1,8 @@
-import { Observable } from 'rxjs';
 import { Request } from 'express';
-import { CanActivate, ExecutionContext, Injectable, Logger } from '@nestjs/common';
+import { Observable } from 'rxjs';
 import { Reflector } from '@nestjs/core';
+import { CanActivate, ExecutionContext, Injectable, Logger } from '@nestjs/common';
+
 import { Role } from 'src/decorator/role.enum';
 
 const validationObject = {

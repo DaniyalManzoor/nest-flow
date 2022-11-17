@@ -1,6 +1,7 @@
-import { RequestServices } from './../request.service';
 import { Injectable, Logger, NestMiddleware } from '@nestjs/common';
 import { NextFunction, Request, Response } from 'express';
+
+import { RequestServices } from 'src/request.service';
 
 @Injectable()
 export class LoggerMiddleware implements NestMiddleware {
